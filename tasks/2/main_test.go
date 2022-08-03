@@ -51,6 +51,7 @@ func TestChangeString(t *testing.T) {
 		},
 	}
 
+	// Assert
 	for _, tst := range tests {
 		result, err := ChangeString(tst.input)
 		if tst.err != err || tst.expected != result {
@@ -87,6 +88,7 @@ func TestUnpackWithSlash(t *testing.T) {
 		},
 	}
 
+	// Assert
 	for _, tst := range tests {
 		result, err := ChangeString(tst.input)
 		if tst.err != err || tst.expected != result {
