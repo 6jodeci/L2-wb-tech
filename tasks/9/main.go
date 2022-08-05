@@ -15,7 +15,6 @@ var (
 	fullURLFile string
 )
 
-// https://golangdocs.com/golang-download-files
 func main() {
 
 	var fullURLFile string
