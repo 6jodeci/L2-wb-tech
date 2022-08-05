@@ -20,7 +20,7 @@ func test() *customError {
 
 func main() {
 	var err error
-	err = test()    // err == nil, *customError
+	err = test()    // err == nil, nil test() возвращает ссылку на структуру, которая реализует интерфейс error
 	if err != nil { // nil без типа != nil с типом
 		fmt.Println("error")
 		return

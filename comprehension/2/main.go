@@ -4,7 +4,7 @@ package main
 import "fmt"
 
 func test() (x int) {
-	defer func() {
+	defer func() { // LIFO
 		x++
 	}()
 	x = 1
@@ -14,7 +14,7 @@ func test() (x int) {
 
 func anotherTest() int {
 	var x int
-	defer func() {
+	defer func() { 
 		x++
 	}()
 	x = 1
