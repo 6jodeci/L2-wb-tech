@@ -1,3 +1,4 @@
+// Реализовать утилиту wget с возможностью скачивать сайты целиком.
 package main
 
 import (
@@ -21,8 +22,9 @@ func main() {
 	fmt.Println("Welcome to Wget!")
 	fmt.Println("Введите ссылку для скачивания:")
 	fmt.Print("> ")
-	// Вставляем ссылку на скачку файла || для примера я взял iso-образ своего linux-дистрибутива
+	// Вставляем ссылку на скачку файла || страницы == для примера я взял iso-образ своего linux-дистрибутива
 	fmt.Scan(&fullURLFile) // https://iso.pop-os.org/22.04/amd64/nvidia/11/pop-os_22.04_amd64_nvidia_11.iso
+	// https://golangify.com/func для примера скачивания сайта использовал эту страницу
 
 	// Генерирует название скаченного файла исходя из ссылки
 	fileURL, err := url.Parse(fullURLFile)
