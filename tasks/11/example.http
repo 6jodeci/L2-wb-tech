@@ -1,0 +1,26 @@
+### CREATE EVENT
+POST http://localhost:8080/create_event HTTP/1.1
+content-Type: application/json
+
+{
+	"id": "5",
+	"header": "1",
+	"description":"fdsfds",
+	"creator_id": "1"
+}
+
+
+### DELETE EVENT
+POST http://localhost:8080/delete_event?event_id=5
+Content-Type: application/x-www-form-urlencoded
+
+### UPDATE EVENT
+POST http://localhost:8080/update_event HTTP/1.1
+content-Type: application/json
+
+{
+	"id": "5",
+	"header": "1",
+	"description":"1",
+	"creator_id": "1"
+}
