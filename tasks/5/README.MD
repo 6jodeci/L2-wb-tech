@@ -1,0 +1,8 @@
+-A || go run main.go -A 2 yellow file.txt 
+-B || go run main.go -B 1 grey file.txt
+-C || go run main.go -C 2 yellow file.txt 
+-c || go run main.go -c green file.txt 
+-v || go run main.go -v Orange file.txt 
+-i || go run main.go -i -v orange file.txt 
+-F || go run main.go -F green file.txt 
+-n || go run main.go -n Orange file.txt 
