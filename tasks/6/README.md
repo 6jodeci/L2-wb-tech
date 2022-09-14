@@ -1,0 +1,3 @@
+-f || go run main.go -f 2 text.txt
+-d || go run main.go -d 2 text.txt
+-s || go run main.go -s 2 text.txt
